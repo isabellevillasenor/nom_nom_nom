@@ -3,8 +3,7 @@ require './lib/ingredient'
 class Pantry < Ingredient
     attr_reader :stock
     def initialize
-        @stock = Hash.new{ |k, v| k = [:name]
-                                  v = 0}
+        @stock = Hash.new
     end
 
     def stock_check(name = [:name])
